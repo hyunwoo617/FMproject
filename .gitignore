@@ -1,0 +1,13 @@
+# Firebase
+.firebase/
+firebase-debug.log
+firestore-debug.log
+ui-debug.log
+
+# System
+.DS_Store
+Thumbs.db
+
+# Misc
+*.tmp
+*.bak
