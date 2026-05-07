@@ -528,12 +528,17 @@ tr:hover td { background: rgba(255, 255, 255, 0.01); }
       <div class="nav-main-item" onclick="switchCategory('admin', this)">관리자</div>
     </div>
 
-    <div class="nav-user" onclick="openModal('modal-login')">
-      <div class="user-avatar" id="sb-avatar" style="background:var(--primary)">강</div>
-      <div class="user-meta">
-        <div class="user-name" id="sb-uname">강민건 PD</div>
-        <div class="user-role" id="sb-urole">작성자</div>
+    <div style="display: flex; align-items: center; gap: 16px;">
+      <div class="nav-user" onclick="openModal('modal-login')">
+        <div class="user-avatar" id="sb-avatar" style="background:var(--primary)">강</div>
+        <div class="user-meta">
+          <div class="user-name" id="sb-uname">강민건 PD</div>
+          <div class="user-role" id="sb-urole">작성자</div>
+        </div>
       </div>
+      <button class="btn btn-sm" onclick="handleLogout()" style="background: rgba(255, 255, 255, 0.05); color: var(--text-dim); border: 1px solid var(--glass-border);">
+        🚪 로그아웃
+      </button>
     </div>
   </nav>
 
